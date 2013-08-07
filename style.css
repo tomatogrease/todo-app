@@ -1,0 +1,11 @@
+body {width:600px;}
+
+#tasks, #taskslists {float:left;}
+
+#tasks {
+	width:30%;
+}
+
+#taskslists {
+	width:70%;
+}

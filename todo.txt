@@ -1,0 +1,33 @@
+/**
+ * Healthy JavaScript guidelines: https://cd.centraldesktop.com/engineering/doc/19152164/w-JavaScriptStyleGuide
+ * Need to implement router so Router calls collection, then renders the view.
+ *
+ * RULES:
+ * - Implement the taskslists project explained in test
+ *   
+ *   If you visit 
+ *   File management:
+ *      - models are their own files ( One module per file)
+ *      - behaviors are their own files
+ *      - use routers and views
+ *
+ * ------------
+ * REQUIREMENTS:
+ * ------------
+ * When you arrive on the page without an ID, load the first tasklist and its associated tasks.
+ *     http://root/ -> goes to taskslists page w/ first tl rendered
+ *
+ * When you arrive on the page with an ID, load the tasks associated with that tasklist id.
+ *     http://root/%tlID% -> re-renders mid part.
+ *  
+ * No page redirects/refreshes when adding/removing/acting on tasks or taskslists
+ *
+ * ------------
+ * DATA MODEL:
+ * ------------
+ * taskslist : model
+ * task : model
+ * taskslists: collection
+ * tasks: collect
+ * 
+ */

@@ -1,0 +1,42 @@
+{"todoData" : [
+	{"tasks" : [
+		{
+			"name" : "Sort dirty laundry",
+			"taskID" : 1,
+			"tasklistID" : 0,
+			"complete" : false
+		},
+		{
+			"name" : "Wash dirty laundry",
+			"taskID" : 2,
+			"tasklistID" : 0,
+			"complete" : false
+		},
+		{
+			"name" : "Fold clean clothes",
+			"taskID" : 3,
+			"tasklistID" : 0,
+			"complete" : false	
+		},
+		{
+			"name" : "Milk",
+			"tasklistID" : 1,
+			"taskID" : 4,
+			"complete" : false
+		}
+	]},
+	{"tasklists" : [
+		{
+			"name" : "Unsorted",
+			"id" : 0
+		},
+		{
+			"name" : "Laundry",
+			"id" : 1
+		},
+		{
+			"name" : "Groceries",
+			"id" : 2
+		}
+	]}
+]}
