@@ -14,7 +14,10 @@ var TodoRouter = Backbone.Router.extend({
 		"*path": "defaultRoute"
 	},
 	getData: function(url){
-		/*
+		/**
+		 * using $.ajax returns undefined data in defaultRoute definition
+		 * Hardcoding tasklists for now
+
 		$.ajax({
 			url: url,
 			async: false,
@@ -22,7 +25,9 @@ var TodoRouter = Backbone.Router.extend({
 		}).done(function(data){
 			return data;
 		})
+	
 		*/
+	
 		var data = {"tasklists" : [
 			{
 				"name" : "Unsorted",
@@ -44,13 +49,15 @@ var TodoRouter = Backbone.Router.extend({
 
 // Initiate router
 var todo_router = new TodoRouter;
-/*
+
+/**
+ * Display tasks
 todo_router.on('route:getTasks',function(id){
 	console.log('hey' + id);
 });
 */
 
-// Load first task list when landing on page without URL or as default
+// "Default" page display.
 todo_router.on('route:defaultRoute',function(path){
 	var todoData = this.getData('js/todo.json');
 	var tasklists = todoData.tasklists;
@@ -62,5 +69,5 @@ todo_router.on('route:defaultRoute',function(path){
 Backbone.history.start();
 
 
-console.log('router outside');
+console.log('Router loads -- outside extend.');
  
