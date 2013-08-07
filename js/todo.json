@@ -1,4 +1,4 @@
-{"todoData" : [
+[
 	{"tasks" : [
 		{
 			"name" : "Sort dirty laundry",
@@ -39,4 +39,4 @@
 			"id" : 2
 		}
 	]}
-]}
+]

@@ -1,4 +1,4 @@
-// Read more here:
+// See http://backbonetutorials.com/what-is-a-model/
 var TasklistModel = Backbone.Model.extend({
 	initialize: function(){}
 });

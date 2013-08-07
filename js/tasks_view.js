@@ -11,3 +11,6 @@ var TasksView = Backbone.View.extend({
 		this.$el.html( template );
 	}
 });
+
+
+console.log('tasks_view.js loaded')
