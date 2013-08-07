@@ -6,4 +6,3 @@ var TasklistModel = Backbone.Model.extend({
 var TasklistCollection = Backbone.Collection.extend({
 	model: TasklistModel
 });
-

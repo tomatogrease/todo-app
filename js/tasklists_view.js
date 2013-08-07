@@ -2,16 +2,13 @@ var TasklistsView = Backbone.View.extend({
 	initialize: function(){
 		this.render();
 	},
-	loadTasklistData: function(){
-
-	},
 	render: function(){
-		var tasklists = this.options.data; // passed from router
+		var tasklists = this.options.data;
 		console.log(tasklists);
 
-
-		var list_markup = "<% _.each(tasklists, function(list) { %> <li><%= list.name %></li> <% }); %>";
+		var list_markup = '<% _.each(tasklists, function(list) { %> <li><a href="/#/tasklist/<%= list.id %> "><%= list.name %></a></li> <% }); %>';
 		var template = _.template(list_markup, {tasklists : tasklists});
 		this.$el.html( template );
+
 	}
 });
